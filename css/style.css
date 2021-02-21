@@ -1,0 +1,23 @@
+:root {
+  --gray: #545454;
+  --black: #000000;
+  --blue: #5551FF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.hero {
+  block-size: 350px;
+  background-image: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../images/patron.png');
+  background-repeat: repeat;
+  background-size: cover, 50px 50px;
+  /* background-position: center top; */
+}
+
+.wrapper {
+  max-inline-size: 903px;
+  margin-inline-start: 116px;
+}
