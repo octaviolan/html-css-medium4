@@ -15,9 +15,27 @@ body {
   background-repeat: repeat;
   background-size: cover, 50px 50px;
   /* background-position: center top; */
+  margin-block-end: 65px;
 }
 
 .wrapper {
+  /* border: 1px solid red; */
   max-inline-size: 903px;
   margin-inline-start: 116px;
+}
+
+.header {
+  position: sticky;
+  inset-block-start: 0;
+}
+
+.header-content {
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+.header header {
+  position: absolute;
+  inline-size: 185px;
+  inset-inline-start: 927px;
 }
