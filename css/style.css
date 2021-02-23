@@ -39,3 +39,93 @@ body {
   inline-size: 185px;
   inset-inline-start: 927px;
 }
+
+.header p {
+  margin-block-start: 0;
+  margin-block-end: 16px;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--black);
+  text-transform: uppercase;
+
+}
+
+.header summary {
+  margin-block-start: 0;
+  margin-block-end: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header ol {
+  margin-block: 0;
+  padding-inline-start: 0;
+  /* border: 1px solid red; */
+}
+
+.header li {
+  margin-block-start: 0;
+  margin-block-end: 8px;
+  padding: 8px;
+  list-style: none;
+  font-size: 14px;
+  /* border: 1px solid blue; */
+  line-height: 24px;
+}
+
+.header li:hover {
+  background: var(--blue);
+}
+
+.header li:hover a {
+  color: white;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.main-content {
+  text-align: center;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 16px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 40px;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: normal;
+}
+
+h3 {
+  margin-block: 16px;
+  font-size: 24px;
+  font-weight: normal;
+  counter-increment: titleList;
+}
+
+h3::before {
+  content: counter(titleList)'. ';
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray);
+  margin-block-start: 0;
+  margin-block-end: 40px;
+}
+
+hr {
+  margin-block: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
