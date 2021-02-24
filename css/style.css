@@ -51,6 +51,7 @@ body {
 }
 
 .header summary {
+  color: var(--black);
   margin-block-start: 0;
   margin-block-end: 16px;
   font-size: 14px;
@@ -128,4 +129,25 @@ p {
 hr {
   margin-block: 64px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.section-content blockquote {
+  inline-size: 615px;
+  margin: 0 auto;
+  margin-block-start: 64px;
+  border-inline-start: 4px solid var(--blue);
+  padding-inline-start: 16px;
+  letter-spacing: 0px;
+}
+
+.section-content blockquote p {
+  color: var(--black);
+  font-size: 24px;
+  margin: 0;
+  text-align: start;
+  line-height: 32px;
+}
+
+.section-content blockquote p:first-of-type {
+  margin-block-end: 16px;
 }
