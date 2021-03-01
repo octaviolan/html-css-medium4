@@ -4,6 +4,10 @@
   --blue: #5551FF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
@@ -106,14 +110,14 @@ h2 {
   font-weight: normal;
 }
 
-h3 {
+.section-content h3 {
   margin-block: 16px;
   font-size: 24px;
   font-weight: normal;
   counter-increment: titleList;
 }
 
-h3::before {
+.section-content h3::before {
   content: counter(titleList)'. ';
 }
 
@@ -161,4 +165,67 @@ pre {
   border: 8px solid var(--blue);
   border-radius: 8px;
   box-shadow: -10px 10px 0px 0px #ABAAF6;
+}
+
+.box-model h3 {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.box-model ol,
+.box-model ul {
+  padding-inline-start: 16px;
+}
+
+.box-model ul {
+  list-style: none;
+}
+.box-model ul li::before {
+  content: "";
+  display: inline-block;
+  inline-size: 8px;
+  block-size: 8px;
+  border-radius: 50%;
+  background: var(--blue);;
+  margin-inline-start: -15px;
+  margin-inline-end: 16px;
+}
+
+.box-model li {
+  margin-block-end: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray);
+}
+
+.slider-container {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin-block-end: 16px;
+}
+
+iframe {
+  display: inline-block;
+  inline-size: 100%;
+  block-size: 464px;
+}
+
+.slider-bullet-list {
+  text-align: center;
+}
+
+.bullet-list {
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 50%;
+  background: rgba(142, 45, 226, 0.5);
+}
+
+.bullet-list:hover {
+  background: var(--blue);
 }
