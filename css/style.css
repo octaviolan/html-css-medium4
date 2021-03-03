@@ -342,7 +342,7 @@ input[type="submit"] {
   }
 
   .section-content blockquote {
-    inline-size: 340px;
+    inline-size: 300px;
   }
 
   .section-content blockquote p {
@@ -379,7 +379,7 @@ input[type="submit"] {
   }
 
   .footer-content {
-    inline-size: 300px;
+    inline-size: 250px;
   }
   .footer p {
     font-size: 16px;
