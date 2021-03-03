@@ -51,7 +51,6 @@ body {
   line-height: 24px;
   color: var(--black);
   text-transform: uppercase;
-
 }
 
 .header summary {
@@ -165,6 +164,10 @@ pre {
   border: 8px solid var(--blue);
   border-radius: 8px;
   box-shadow: -10px 10px 0px 0px #ABAAF6;
+}
+
+.box-model {
+  margin-block-start: 155px;
 }
 
 .box-model h3,
@@ -289,7 +292,7 @@ input[type="submit"] {
 }
 
 .footer-content {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   inline-size: 378px;
   margin: 0 auto;
   text-align: center;
@@ -299,5 +302,87 @@ input[type="submit"] {
   font-size: 32px;
   margin-block-end: 16px;
   color: white;
+}
+
+@media only screen and (max-width: 360px) {
+  .hero {
+    block-size: 120px;
+    margin-block-end: 30px;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    padding-inline: 10px;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .header header {
+    position: static;
+  }
+
+  .header p {
+    margin-block-end: 8px;
+  }
+
+  .header li {
+    padding: 4px;
+    margin-block-end: 4px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  hr {
+    margin-block: 40px;
+  }
+
+  .section-content blockquote {
+    inline-size: 340px;
+  }
+
+  .section-content blockquote p {
+    font-size: 18px;
+  }
+
+  pre {
+    overflow: auto;
+    padding: 15px;
+    margin-inline: 5px;
+    line-height: 20px;
+  }
+
+  .box-model {
+    margin-block-start: 50px;
+  }
+
+  .form {
+    margin-block-end: 30px;
+  }
+
+  input[type="submit"] {
+    margin-inline-start: 0;
+  }
+
+  .form input {
+    inline-size: 100%;
+    display: block;
+    margin-block: 8px;
+  }
+
+  .footer {
+    padding: 24px;
+  }
+
+  .footer-content {
+    inline-size: 300px;
+  }
+  .footer p {
+    font-size: 16px;
+  }
 }
 
